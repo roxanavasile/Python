@@ -1,0 +1,10 @@
+people_who_attended_part_A=float(input("Enter number of people who attended part A: "))
+people_who_attended_part_B=float(input("Enter number of people who attended part B: "))
+people_who_attended_part_A_and_B=float(input("Enter number of people who attended part A and B: "))
+training_fee_for_people_who_attended_part_A=people_who_attended_part_A*100
+training_fee_for_people_who_attended_part_B=people_who_attended_part_B*150
+training_fee_for_people_who_attended_part_A_and_B_before_discount=people_who_attended_part_A_and_B*250
+dicount_for_people_who_attended_part_A_and_B=training_fee_for_people_who_attended_part_A_and_B_before_discount*0.02
+training_fee_for_people_who_attended_part_A_and_B=training_fee_for_people_who_attended_part_A_and_B_before_discount-dicount_for_people_who_attended_part_A_and_B
+total_traing_fee=training_fee_for_people_who_attended_part_A+training_fee_for_people_who_attended_part_B+training_fee_for_people_who_attended_part_A_and_B
+print("Display total training fee: ",total_traing_fee)
